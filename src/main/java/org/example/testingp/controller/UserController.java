@@ -19,8 +19,6 @@ public class UserController {
         return "reg";
     }
 
-
-
     @GetMapping("/index")
     public String index() {
         return "index";
@@ -42,8 +40,6 @@ public class UserController {
             user.setPassword(password);
             userService.saveUser(user);
 
-            System.out.println("Пользователь зарегистрирован: "
-                    + username + ", " + password);
 
             return "/addUseMessage";
         }else {
