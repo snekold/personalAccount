@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация пользователя</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(135, 185, 160);
+        }
+        .navbar {
+            background-color: rgba(79, 147, 205, 0.47);
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.47) !important;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            background-color: rgba(79, 147, 205, 0.47);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(10, 83, 162);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgba(255, 9, 9, 0.47);
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.47);
+        }
+        label{
+            color: rgba(255, 255, 255, 0.47) !important;
+        }
+    </style>
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">------</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/index">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">-----</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">--------</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Форма регистрации -->
+<div class="container">
+    <h2>Ошибка</h2>
+    <h3>(такой логин уже занят)</h3>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

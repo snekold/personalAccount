@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>User Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .user-info {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
 </head>
-<h1>ЛИЧНЫЙ КАБИНЕТ</h1>
 <body>
+<div class="user-info" th:if="${user != null}">
+    <h1>Личный кабинет</h1>
+    <br>
+    <p><strong>Имя пользователя:   </strong> <span th:text="${user.username}"></span></p>
+</div>
+
+<div th:if="${user == null}">
+    <h1>Пользователь не найден</h1>
+    <p>Объект пользователя не был передан на страницу.</p>
+</div>
 </body>
 </html>
